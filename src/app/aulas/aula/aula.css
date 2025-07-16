@@ -1,0 +1,12 @@
+.aula {
+  margin: 1rem;
+}
+
+.aula img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aula h3 {
+  margin-top: 0.5rem;
+}

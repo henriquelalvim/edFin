@@ -1,18 +1,26 @@
 import { Component } from '@angular/core';
+import { Header } from './header/header';
+import { Hero } from './hero/hero';
+import { Aulas } from './aulas/aulas';
+import { Aula } from './aulas/aula/aula';
+import { QuemSomos } from './quem-somos/quem-somos';
+import { Cadastro } from './cadastro/cadastro';
+import { Footer } from './footer/footer';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <app-header></app-header>
+    <app-hero></app-hero>
+    <app-aulas>
+      <app-aula>
+      </app-aula> 
+    </app-aulas>
+    <app-quem-somos></app-quem-somos>
+    <app-cadastro></app-cadastro>
+    <app-footer></app-footer>
+  `,
+  styles: [],
+  imports: [Header, Aulas, Hero, QuemSomos, Cadastro, Footer, Aula, Aula]
 })
-export class AppComponent {
-  menuOpen = false;
-
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
-  }
-
-  closeMenu() {
-    this.menuOpen = false;
-  }
-}
+export class AppComponent {}
