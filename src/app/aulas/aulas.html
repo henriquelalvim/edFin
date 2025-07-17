@@ -1,4 +1,10 @@
-<section id="aulas" class="section">
-  <h2>Aulas</h2>
-  <p>Do básico ao avançado: orçamento, investimentos, economia, e como o mundo do dinheiro funciona.</p>
-</section>
+<div class="aulas">
+  <h2 class="titulo">Aulas Disponíveis</h2>
+  <div *ngFor="let aula of aulas">
+    <app-aula 
+      [title]="aula.title" 
+      [description]="aula.description"
+      [imageUrl]="aula.imageUrl">
+    </app-aula>
+  </div>
+</div>

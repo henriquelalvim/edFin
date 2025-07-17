@@ -1,12 +1,21 @@
 .hero {
-    background: #a5d6a7; /* Verde claro */
-    padding: 10rem 2rem 5rem;
+    background: url(../../assets/fundoTelaFinancas.png); /* Verde claro */
+    background-size: cover;
+    background-position: center;
+    padding: 45em 2rem 5rem;
     text-align: center;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.hero p.subtitulo {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
 }
 
 .hero .btn {

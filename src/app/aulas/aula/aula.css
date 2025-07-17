@@ -1,12 +1,29 @@
 .aula {
   margin: 1rem;
+  display: flex;
+  align-items: center; /* Para alinhar imagem e texto */
 }
 
 .aula img {
-  max-width: 100%;
+  width: 30%;
   height: auto;
 }
 
 .aula h3 {
   margin-top: 0.5rem;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* Estilos específicos para a esquerda */
+.left {
+  flex-direction: row; /* Para alinhar imagem à esquerda */
+}
+
+/* Estilos específicos para a direita */
+.right {
+  flex-direction: row-reverse; /* Para alinhar imagem à direita */
 }

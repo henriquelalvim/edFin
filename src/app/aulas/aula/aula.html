@@ -1,5 +1,5 @@
-<div class="aula">
+<div class="aula" [ngClass]="{'left': isLeft, 'right': !isLeft}">
   <img [src]="imageUrl" alt="{{ title }}" />
-  <h3>{{ title }}</h3>
+  <h3 class="titulo">{{ title }}</h3>
   <p>{{ description }}</p>
 </div>
