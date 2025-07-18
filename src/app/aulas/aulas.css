@@ -3,14 +3,29 @@
     background: #f9f9f9;
     text-align: center;
 }
+
 .aulas {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Manteremos como coluna */
+  padding: 2rem;
   background: #65b233;
 }
+
+/* Alinho os títulos */
 .titulo {
     font-size: 2rem;
+    margin-bottom: 0.5rem; /* Ajustado para ter menos espaço entre título e imagem */
+    color: #ffffff;
+}
+
+.supertitulo {
+    font-size: 2.5rem;
     margin-bottom: 2rem;
     color: #ffffff;
+    align-self: center;
+}
+
+/* Se você quiser centralizar títulos e descrições individuais, adicione a classe abaixo */
+.aula h3 {
+    text-align: left; /* Adicione para alinhar o título à esquerda */
 }

@@ -13,7 +13,10 @@
 }
 
 .logo {
-    height: 40px; /* Tamanho da logo */
+    height: 3.3rem;
+    width: auto; /* Deixe a logo com largura automática */
+    max-width: 160px; /* Limite a largura máxima */
+    object-fit: contain; /* Garante que a logo mantenha suas proporções */
 }
 
 /* Mostrar o botão de menu apenas em telas menores */
@@ -32,35 +35,63 @@ nav {
     gap: 1.5rem; /* Espaçamento entre itens */
 }
 
-/* Estilos para telas menores */
-@media (max-width: 768px) {
-    nav {
-        display: none; /* Escondido por padrão */
-        flex-direction: column; /* Colocar itens em coluna */
-        background: #2e7d32; /* Verde escuro */
-        position: absolute; 
-        top: 64px; /* Ajustar conforme necessário */
-        right: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav.show {
-        display: flex; /* Mostrar ao abrir o menu */
-    }
-
-    .menu-toggle {
-        display: block; /* Mostrar o botão em telas pequenas */
-    }
-}
-
 /* Estilização para os links */
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2rem; /* Tamanho da fonte dos links */
 }
 
 nav a:hover {
     text-decoration: underline;
 }
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Empilha os elementos verticalmente */
+        align-items: stretch;
+        padding: 1rem 0rem;
+    }
+    .logo {
+        align-self: flex-start;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        align-self: flex-end;
+        margin-bottom: 0.5rem;
+    }
+
+    nav {
+        display: none; /* Oculto inicialmente */
+        flex-direction: column;
+        background: #2e7d32;
+        width: 100%;
+        text-align: center;
+        z-index: 1001;
+        box-sizing: border-box;
+        padding: 0.5rem 0; /* Adiciona padding vertical ao menu */
+        margin: 0; /* Remover margens extras */
+        position: static; /* Removido o posicionamento absoluto */
+    }
+
+    nav.show {
+        display: flex; /* Exibe o menu quando aberto */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar o botão em telas pequenas */
+        align-self: flex-end;
+        margin-right: 0; /* Remove margem extra */
+    }
+
+    .header{
+        width: 100%;
+    }
+}
+  
+
+

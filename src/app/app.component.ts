@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Header } from './header/header';
 import { Hero } from './hero/hero';
 import { Aulas } from './aulas/aulas';
-import { Aula } from './aulas/aula/aula';
 import { QuemSomos } from './quem-somos/quem-somos';
 import { Cadastro } from './cadastro/cadastro';
 import { Footer } from './footer/footer';
@@ -12,15 +11,12 @@ import { Footer } from './footer/footer';
   template: `
     <app-header></app-header>
     <app-hero></app-hero>
-    <app-aulas>
-      <app-aula>
-      </app-aula> 
-    </app-aulas>
+    <app-aulas></app-aulas>
     <app-quem-somos></app-quem-somos>
     <app-cadastro></app-cadastro>
     <app-footer></app-footer>
   `,
   styles: [],
-  imports: [Header, Aulas, Hero, QuemSomos, Cadastro, Footer, Aula, Aula]
+  imports: [Header, Aulas, Hero, QuemSomos, Cadastro, Footer]
 })
 export class AppComponent {}

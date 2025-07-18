@@ -1,0 +1,28 @@
+.aula-esquerda {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.aula-esquerda h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.description {
+  color: #fff;
+  margin-left: 2rem;
+}
+
+img {
+  width: 25%;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 10px;
+}

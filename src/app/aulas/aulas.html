@@ -1,10 +1,17 @@
 <div class="aulas">
-  <h2 class="titulo">Aulas Disponíveis</h2>
-  <div *ngFor="let aula of aulas">
-    <app-aula 
-      [title]="aula.title" 
+  <h2 class="supertitulo">Aulas Disponíveis</h2>
+  <div *ngFor="let aula of aulas; let i = index">
+    <app-aula-esquerda
+      *ngIf="i % 2 === 0"
+      [title]="aula.title"
       [description]="aula.description"
       [imageUrl]="aula.imageUrl">
-    </app-aula>
+    </app-aula-esquerda>
+    <app-aula-direita
+      *ngIf="i % 2 !== 0"
+      [title]="aula.title"
+      [description]="aula.description"
+      [imageUrl]="aula.imageUrl">
+    </app-aula-direita>
   </div>
 </div>

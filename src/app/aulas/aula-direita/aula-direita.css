@@ -1,0 +1,30 @@
+.aula-direita {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.aula-direita h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-left: 75%;
+  justify-content: flex-end;
+  font-size: 2rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.description {
+  color: #fff;
+  margin-right: 2rem;
+}
+
+img {
+  width: 25%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
