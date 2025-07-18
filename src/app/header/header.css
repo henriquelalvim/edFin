@@ -50,48 +50,49 @@ nav a:hover {
 /* Estilos para telas menores */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: row; /* Empilha os elementos verticalmente */
-        align-items: stretch;
-        padding: 1rem 0rem;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0.5rem 0rem;
+        position: relative;
     }
     .logo {
         align-self: flex-start;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.1rem;
+        margin-left: 0.5rem;
     }
 
     .menu-toggle {
         display: block;
-        align-self: flex-end;
-        margin-bottom: 0.5rem;
+        align-self: flex-start;
+        margin: 0.5rem 0.5rem 0 0;
+        z-index: 1002;
+        position: relative;
     }
 
     nav {
-        display: none; /* Oculto inicialmente */
+        display: none;
         flex-direction: column;
         background: #2e7d32;
-        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 370px;
+        width: 90vw;
         text-align: center;
         z-index: 1001;
         box-sizing: border-box;
-        padding: 0.5rem 0; /* Adiciona padding vertical ao menu */
-        margin: 0; /* Remover margens extras */
-        position: static; /* Removido o posicionamento absoluto */
+        padding: 0.5rem 0;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     }
 
     nav.show {
-        display: flex; /* Exibe o menu quando aberto */
+        display: flex;
     }
 
-    .menu-toggle {
-        display: block; /* Mostrar o botão em telas pequenas */
-        align-self: flex-end;
-        margin-right: 0; /* Remove margem extra */
-    }
-
-    .header{
-        width: 100%;
-    }
 }
-  
+
 
 
