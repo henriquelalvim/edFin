@@ -1,3 +1,21 @@
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1rem;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -12,6 +30,7 @@ input, button {
     max-width: 300px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
 button {
@@ -19,6 +38,8 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 button:hover {

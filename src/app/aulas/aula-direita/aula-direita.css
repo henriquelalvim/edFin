@@ -20,6 +20,9 @@
 .description {
   color: #fff;
   margin-right: 2rem;
+  font-size: 1.8rem;
+  max-width: 40vw;
+  text-align: right;
 }
 
 img {

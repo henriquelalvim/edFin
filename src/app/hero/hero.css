@@ -1,9 +1,19 @@
 .hero {
-    background: url(../../assets/fundoTelaFinancas.png); /* Verde claro */
+    background: url(../../assets/fundoTelaFinancas.png);
     background-size: cover;
     background-position: center;
-    padding: 45em 2rem 5rem;
+    padding: 7rem 2rem 3.5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.hero-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero h1 {
@@ -13,7 +23,7 @@
 }
 
 .hero p.subtitulo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 2rem;
 }
@@ -24,6 +34,46 @@
     padding: 2rem 5rem;
     text-decoration: none;
     display: inline-block;
-    margin-top: 2rem;
     border-radius: 5px;
+    font-size: 2rem;
+}
+
+.hero .logo {
+    width: 40%;
+    margin-bottom: 0;
+    position: static;
+    display: block;
+    text-align: left;
+}
+
+.hero .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .textos {
+    color: #ffffff;
+    font-size: 1.2rem;
+    position: static;
+    width: 50%;
+    display: block;
+    text-align: right;
+}
+
+.hero .titulo {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero .botao {
+    padding-top: 1rem;
+    display: block;
+    margin: 0rem auto 0;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+.section {
+    padding: 0%;
 }

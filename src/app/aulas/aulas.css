@@ -11,18 +11,13 @@
   background: #65b233;
 }
 
-/* Alinho os títulos */
-.titulo {
-    font-size: 2rem;
-    margin-bottom: 0.5rem; /* Ajustado para ter menos espaço entre título e imagem */
-    color: #ffffff;
-}
 
 .supertitulo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
     color: #ffffff;
     align-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Se você quiser centralizar títulos e descrições individuais, adicione a classe abaixo */
