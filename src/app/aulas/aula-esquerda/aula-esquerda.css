@@ -28,3 +28,38 @@ img {
   object-fit: cover;
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  .aula-esquerda {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aula-esquerda h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .description {
+    text-align: left;
+    margin: 0;
+    max-width: 90%;
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}

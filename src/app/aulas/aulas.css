@@ -24,3 +24,14 @@
 .aula h3 {
     text-align: left; /* Adicione para alinhar o título à esquerda */
 }
+
+@media (max-width: 768px) {
+    .aulas {
+        flex-direction: column; /* Mudar para coluna em telas menores */
+        align-items: center; /* Centralizar os itens */
+    }
+
+    .supertitulo {
+        font-size: 2.5rem; /* Reduzir o tamanho do texto em telas menores */
+    }
+}

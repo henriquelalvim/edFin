@@ -31,3 +31,38 @@ img {
   object-fit: cover;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .aula-direita {
+      flex-direction: column; /* Coloca os itens na coluna */
+      align-items: center;    /* Centraliza os itens */
+  }
+
+  .aula-direita h3 {
+      margin-bottom: 1rem;    /* Espaço abaixo do título */
+      margin-left: auto;
+      text-align: center;      /* Centraliza o texto */
+      font-size: 2.5rem;       /* Tamanho do texto */
+  }
+
+  .content {
+      display: flex;           /* Manter a estrutura flexível */
+      flex-direction: column-reverse;  /* Coloca os itens em coluna */
+      align-items: center;     /* Centraliza os itens */
+      justify-content: center;  /* Centraliza o conteúdo */
+      width: 100%;             /* Garante que ocupe a largura total */
+  }
+
+  .description {
+      text-align: left;      /* Alinha o texto centralmente */
+      max-width: 90%;          /* Limite de largura para responsividade */
+      font-size: 1.2rem;       /* Tamanho do texto */
+      margin: 0;               /* Remove margens laterais */
+  }
+
+  img {
+      width: 70%;              /* Imagem ocupa 70% da largura */
+      height: auto;            /* Mantém a proporção */
+      margin-bottom: 1rem;     /* Espaço abaixo da imagem */
+  }
+}
