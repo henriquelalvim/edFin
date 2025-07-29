@@ -1,10 +1,10 @@
 <header class="navbar">
-  <img src="./../../assets/logo.png" alt="Logo" class="logo" />
+  <a (click)="scrollTo('#hero')"><img src="./../../assets/logo.png" alt="Logo" class="logo"/></a>
   <button class="menu-toggle" (click)="toggleMenu()">☰</button>
   <nav [class.show]="menuOpen">
-    <a href="#aulas" (click)="closeMenu()">AULAS</a>
-    <a href="#cadastro" (click)="closeMenu()">CADASTRE-SE</a>
-    <a href="#quem-somos" (click)="closeMenu()">QUEM SOMOS</a>
-    <a href="#contato" (click)="closeMenu()">CONTATO</a>
+    <a (click)="closeMenu(); scrollTo('#aulas')">CONTEÚDOS</a>
+    <a (click)="closeMenu(); scrollTo('#como-funciona')">COMO FUNCIONA</a>
+    <a (click)="closeMenu(); scrollTo('#quem-somos')">QUEM SOMOS</a>
+    <a (click)="closeMenu(); scrollTo('#cadastro')">CADASTRE-SE</a>
   </nav>
 </header>

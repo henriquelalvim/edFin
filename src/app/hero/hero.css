@@ -77,3 +77,47 @@
 .section {
     padding: 0%;
 }
+
+@media (max-width: 768px) {
+    .section {
+    padding: 0%;
+    }
+
+    .hero {
+        padding-top: 3rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero .titulo {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero .logo {
+        width: 60%;
+    }
+
+    .hero .textos {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1rem;
+    }
+
+    .hero p.subtitulo {
+        font-size: 1.3rem;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .hero .btn {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+}
